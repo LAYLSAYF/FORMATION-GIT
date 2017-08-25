@@ -10,4 +10,6 @@ class Con extends AnotherClass
 	{
 		# code...
 	}
+
+	public function ifxus_tell_slob(bid)
 }
