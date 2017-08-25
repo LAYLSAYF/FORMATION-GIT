@@ -12,4 +12,10 @@ class Con extends AnotherClass
 	}
 
 	public function ifxus_tell_slob(bid)
+
+	public functionskdksdks
+
+	public function 
+	date_diff();
+	
 }
