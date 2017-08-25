@@ -17,5 +17,10 @@ class Con extends AnotherClass
 
 	public function 
 	date_diff();
+
+	fdlfdf
+	dkfdfkdf
+	dfkdfkdkfd
+	fdkfdkfd
 	
 }
