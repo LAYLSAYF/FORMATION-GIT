@@ -51,8 +51,13 @@ class FormsController extends Controller
      */
     public function PresentationAction(Request $request, $slug)
     {
-        $em = $this->getDoctrine()->getManager();
-        $article = $em->getRepository('FMIChamssBundle:Article')
+	    $em = $this->getDoctrine()->getManager();
+	   
+	       
+	
+	
+	
+	   $article = $em->getRepository('FMIChamssBundle:Article')
                       ->findOneBy(['slug' => $slug]);
         if (!$article){
             throw  $this->createNotFoundException('Unable to find article.');
