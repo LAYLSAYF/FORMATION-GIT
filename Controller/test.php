@@ -28,7 +28,25 @@ class FormsController extends Controller
             'articles' => $articles
         ));
     }
+
     
+
+     /**
+     * @Route(
+     *  "/accueil",
+     *  name="fmi_chamss_accueil"
+     * )
+     */
+    public function AccueilAction(Request $request)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $articles = $em->getRepository('FMIChamssBundle:Article')->getActiveArticles();
+        
+        return $this->render('FMIChamssBundle:Forms:accueil.html.twig', array(
+            'articles' => $articles
+        ));
+    }
+
     /**
      * @Route(
      *  "/article/{slug}",
@@ -95,6 +113,7 @@ class FormsController extends Controller
         ));
     }  
 
+
               $em->persist($datas);
                $em->flush();
                $flashMessage->addSuccess('La demande a été envoyé avec succes.');
@@ -117,3 +136,6 @@ class FormsController extends Controller
     }  
 
 }
+
+}
+
