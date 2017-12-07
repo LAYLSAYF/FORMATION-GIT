@@ -28,6 +28,9 @@ class FormsController extends Controller
             'articles' => $articles
         ));
     }
+
+    
+
      /**
      * @Route(
      *  "/accueil",
@@ -43,6 +46,7 @@ class FormsController extends Controller
             'articles' => $articles
         ));
     }
+
     /**
      * @Route(
      *  "/article/{slug}",
@@ -109,4 +113,29 @@ class FormsController extends Controller
         ));
     }  
 
+
+              $em->persist($datas);
+               $em->flush();
+               $flashMessage->addSuccess('La demande a été envoyé avec succes.');
+            }
+        }
+        
+        return $this->render('FMIChamssBundle:Forms:contact.html.twig', array(
+             'form' => $form->createView()
+        ));
+    }  
+              $em->persist($datas);
+               $em->flush();
+               $flashMessage->addSuccess('La demande a été envoyé avec succes.');
+            }
+        }
+        
+        return $this->render('FMIChamssBundle:Forms:contact.html.twig', array(
+             'form' => $form->createView()
+        ));
+    }  
+
 }
+
+}
+
