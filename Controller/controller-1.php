@@ -11,13 +11,13 @@ class Con extends AnotherClass
 		# code...
 	}
 
-	public function ifxus_tell_slob(bid)
+		function __construct(argument)
+	{
+		# code...
+	}
 
-	public functionskdksdks
-
-	public function 
-
-	dfcfdf
-	vhgh
-	
+		function __construct(argument)
+	{
+		# code...
+	}
 }
